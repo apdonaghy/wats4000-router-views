@@ -54,46 +54,46 @@ export default {
       q5: '',
       languageOptions: [
         {
-            text: 'JavaScript',
-            value: 'js'
+          text: 'JavaScript',
+          value: 'js'
         },
         {
-            text: 'Python',
-            value: 'py'
+          text: 'Python',
+          value: 'py'
         },
         {
-            text: 'Ruby',
-            value: 'ruby'
+          text: 'Ruby',
+          value: 'ruby'
         },
         {
-            text: 'Java',
-            value: 'java'
+          text: 'Java',
+          value: 'java'
         },
         {
-            text: 'PHP',
-            value: 'php'
+          text: 'PHP',
+          value: 'php'
         }
       ],
       topicOptions: [
         {
-            text: 'Accessibility',
-            value: 'axe'
+          text: 'Accessibility',
+          value: 'axe'
         },
         {
-            text: 'Experience Design',
-            value: 'ux'
+          text: 'Experience Design',
+          value: 'ux'
         },
         {
-            text: 'Operations',
-            value: 'ops'
+          text: 'Operations',
+          value: 'ops'
         },
         {
-            text: 'Search Engine Optimization',
-            value: 'seo'
+          text: 'Search Engine Optimization',
+          value: 'seo'
         },
         {
-            text: 'Multimedia',
-            value: 'media'
+          text: 'Multimedia',
+          value: 'media'
         }
       ]
     }
@@ -130,7 +130,6 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-
 
 a {
   color: #42b983;
