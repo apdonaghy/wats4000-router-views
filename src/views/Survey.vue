@@ -5,6 +5,9 @@
       <form v-on:submit.prevent="validateForm">
          <p class="error" v-show="showError">Please check the information you have entered. Be sure to fill in all fields.</p>
 
+          <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday" v-model="q0">
+
         <p><label for="q1">Q1: How long have you been building websites?<br><input type="text" id="q1" v-model="q1"></label></p><!-- TODO: Add the proper v-model directive to this input element. -->
 
         <p>Q2: What languages interest you the most?<br>
@@ -44,6 +47,7 @@ export default {
   data () {
     return {
       showError: false,
+      q0: '',
       q1: '',
       q2: [],
       q3: [],
@@ -97,7 +101,8 @@ export default {
   },
   methods: {
     validateForm: function () {
-      if ((this.q1 !== '') &&
+      if ((this.q0 !== '') &&
+          (this.q1 !== '') &&
           (this.q2.length > 0) &&
           (this.q3.length > 0) &&
           (this.q4 !== '') &&
@@ -111,7 +116,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .error {
   border: 1px solid #aa0000;

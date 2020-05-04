@@ -57,6 +57,8 @@ export default {
     validateForm: function () {
       if ((this.username !== '') &&
           (this.email !== '') &&
+          (this.email.indexOf('@') !== -1) &&
+          (this.email.indexOf('.') !== -1) &&
           (this.password === this.passwordVerify)) {
         this.showForm = false
       } else {
